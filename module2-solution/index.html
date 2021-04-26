@@ -1,10 +1,151 @@
 <!DOCTYPE html>
-<html>
-<head><title>Hello</title></head>
-<body>
-    <h1>Hello This is my first page
-        
-    </h1>
+<html lang="en">
+<head><title>Hello</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/style-ans.css">
+
+
+<style>
+   * {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  padding: 10px;
+  font-size: 18px;
+  position: relative;
+  text-align: left;
+  font-weight: bold;
+  
+  
+  
+}
+.section{
+    background-color: grey;
+    padding: 5px 5px 0px 0px;
+    border: 2px solid black;
+    position: relative;
+    margin: 10px;
+    
+    
+   
+}
+span{
+    width: 100px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    float: right; top: 0;right: 0;margin: 0;
+    position: absolute;
+
+    
+
+}
+#nr1{
+    background-color: lightcoral;
+}
+#nr2{
+    background-color: red;
+    color:white;
+}
+#nr3{
+    background-color: blanchedalmond;
+
+}
+
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+  
+  
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    
+    
+  }
+  
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+   .col-md-6, .col-md-12 {
+    float: left;
+    
+   
+  }
+  
+  .col-md-6 {
+    width: 50%;
+  }
+  
+  .col-md-12 {
+    width: 100%;
+  }
+}
+           
+@media (max-width: 767px) {
+   .col-sm-12 {
+    float: left;
+    
+    
+  }
+  
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+#name >div{
+    text-align: right;
+}
+
+</style>
+
+</head>
+
+<body> 
+    <h1>Our Menu</h1>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12" id="name">
+            <div class="section">
+                <span id="nr1">Chicken</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime delectus suscipit harum aspernatur perferendis, et nostrum? Eum aut accusamus sapiente consequuntur, eveniet impedit. Mollitia eligendi velit totam, rerum at tempora.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12" id="name">
+            <div class="section">
+                     <span id="nr2">Beef</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime delectus suscipit harum aspernatur perferendis, et nostrum? Eum aut accusamus sapiente consequuntur, eveniet impedit. Mollitia eligendi velit totam, rerum at tempora.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12" id="name">
+            <div class="section">
+            <span id="nr3">Sushi</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime delectus suscipit harum aspernatur perferendis, et nostrum? Eum aut accusamus sapiente consequuntur, eveniet impedit. Mollitia eligendi velit totam, rerum at tempora.</p>
+            </div>
+        </div>
+    </div> 
+    
 </body>
 
 
